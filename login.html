@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>تسجيل الدخول_مدرسة التفوق </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body
+        {
+        background-color: aliceblue;
+        font-family:sans-serif;
+        }
+            .address
+    {
+        font-family:cursive;
+        font-size:30px;
+        font-weight:bolder;
+        color: black;
+        text-shadow:5px 5px 5px #572F85;
+                  
+    }
+        
+            .email , .pass
+    {
+        font-size: 30px;
+        font-family: monospace;
+        border-radius: 10px 10px;
+        border: 2px solid #572F85 ;
+        height:60px;
+        outline: none;
+        padding-right: 35px;
+        transition: 0.7s;
+    }
+        
+    .sub
+    {
+        width: 200px;
+        height: 50px;
+        font-size:18px;
+        border-radius: 15px 15px ;
+        border: none;
+        background-color:#572F85;
+        color:white;
+        font-weight: bold;
+        outline: none;
+        transition: 0.7s;
+        font-size: 30px;
+    }
+        .sub:hover
+        {
+           box-shadow: 5px 5px 20px #572F85 ,
+                  -5px -5px 20px #572F85 ;
+            color: black;
+        }
+        .email:focus, .pass:focus 
+    {
+        box-shadow: 5px 5px 20px #572F85 ,
+                  -5px -5px 20px #572F85 ;
+        border: 2px solid black ;
+    }
+        .logo
+        {
+            width: 120px;
+            height: 120px;
+            font-size: 120px;
+            border: none;
+            border-radius: 70px 70px;
+            color: #572F85;
+        }
+        
+        .one 
+        {
+            width: 70px;
+            height: 70px;
+            border: none;
+             z-index: 2;
+        }
+        .two
+        {
+            width: 70px;
+            height: 70px;
+            border: none;
+            z-index: 2;
+        }
+        .three
+        {
+            width: 40px;
+            height: 40px;
+            border: none;
+            z-index: 2;
+            background-color: aliceblue;
+        }
+
+        .anour
+        {
+            font-size: 20px;
+            text-decoration: none;
+            color: rgba(0,0,0,0.5);
+            transition: 1s;
+        }
+        .anour:hover
+        {
+            color: #000;
+        }
+        .check
+        {
+
+            width: 20px;
+            height: 20px;
+            border: none; 
+        }
+        .l1
+        {
+
+            font-size: 20px;
+            font-weight: bold;
+            color: rgba(0,0,0,0.5);
+        }
+        ::placeholder
+        {
+            color: rgba(0,0,0,0.4);
+        }
+        
+        .six
+        {
+            width: 30px;
+            height: 30px;
+            outline: none;    
+        }
+        
+        #show
+        {
+            width: 20px;
+            height: 20px;
+
+            border: none;
+            outline: none;
+        }
+        #noshow
+        {
+            width: 20px;
+            height: 20px;
+
+            border: none;
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    
+    
+
+    
+    
+<div class="perant container-fluid w-75 mt-5">
+    <div class="row mt-4">
+        
+         <div class = "col-12 text-center">
+             <i class="fas fa-book-open logo"></i>  
+        </div>
+        
+        <div class="col-12 mt-4 mb-4">
+            <h1 class="address text-center">THE SCOOL PRAIVATE</h1>
+        </div>
+        
+        <div class="alert alert-danger col-12 text-center fs-5" style="display:none;"></div>
+        
+        <div class="col-12">
+            <form action = "login.php" method = "post" id="myform">
+                <div class="row">
+                                        
+                    <div class="col-12 text-center">
+                        <img src="image_icon/user.png" class="one">
+                    </div>
+                    
+                    <div class="col-12 text-center">
+                        <input id="email" type="text" class="email mb-5 w-75" name = "user" placeholder="Eamil">
+                    </div>
+
+                    
+                      
+                    <div class="col-12 text-center">
+                        <img src="image_icon/password.png" class="two">
+                    </div>
+                    
+                    <div class="col-12 text-center">
+                        <input id="password" type="password" class="pass mb-5 w-75 " name = "pass" placeholder="Password">
+                    </div>
+
+                    
+                    <div class="col-12 text-center mb-4">
+                        <input type="submit" class="sub w-100" value="Login" name="sub" id="sub">
+                    </div>
+                    
+                    <div class="col-12 text-center mb-2">
+                        <a href="forget_password.html" class="anour">Is Forget a Password?</a>
+                    </div>
+                    
+
+                </div>
+            </form>
+        </div>
+        
+
+        </div>
+
+    </div>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="login.js"></script>
+        </body>
+</html>
